@@ -33,7 +33,7 @@ function PoolArea(){
                                 </div>
                             </div>
                         </div>
-=                        <a href="#" className="btn palatin-btn mt-50">Read More</a>
+                       <a href="#" className="btn palatin-btn mt-50">Read More</a>
                     </div>
                 </div>
             </div>

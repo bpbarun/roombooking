@@ -6,7 +6,8 @@ import BookNow from './Components/BookNow';
 import Rooms from './Components/Rooms';
 import PlaceToRemember from './Components/PlaceToRemember';
 import PoolArea from './Components/PoolArea';
-import Booking from './Components/Booking';
+// import Booking from './Components/Booking';
+import SearchPage from './Components/SearchPage'
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,8 @@ function App() {
       <PoolArea />
       <Rooms/>
       <Footer/>
-      <Booking />
+      {/* <Booking /> */}
+      <SearchPage />
     </div>
   );
 }

@@ -62,7 +62,7 @@ function BookNow(){
                                 </select>
                             </div>
 
-                            {/* <button type="submit">Book Now</button> */}
+                            <button type="submit">Check Availability</button>
                         </form>
                     </div>
                 </div>
