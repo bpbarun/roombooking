@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from 'react-router-dom';
+
 function Header(){
 return(
 <>
@@ -7,7 +9,9 @@ return(
         <div className="classy-nav-container breakpoint-off">
             <div className="container">
                 <nav className="classy-navbar justify-content-between" id="palatinNav">
-                    <a href="index.html" className="nav-brand"><img src="img/core-img/logo.png" alt="" /></a>
+                    <Link to="/" className="nav-brand">
+                        <img src="img/core-img/logo.png" alt="" />
+                    </Link>
                     <div className="classy-navbar-toggler">
                         <span className="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
@@ -17,8 +21,12 @@ return(
                         </div>
                         <div className="classynav">
                             <ul>
-                                <li className="active"><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
+                                <li className="active">
+                                    <Link to="/">Home</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">About Us</Link>
+                                </li>
                                 <li><a href="#">Pages</a>
                                     <ul className="dropdown">
                                         <li><a href="index.html">Home</a></li>

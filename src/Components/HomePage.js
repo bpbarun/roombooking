@@ -3,7 +3,10 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 // import AwesomeSlider from 'react-awesome-slider';
 // import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
- 
+import BookNow from './BookNow';
+import Rooms from './Rooms';
+import PlaceToRemember from './PlaceToRemember';
+import PoolArea from './PoolArea';
 function HomePage(){
     return (
     <>
@@ -61,6 +64,10 @@ function HomePage(){
         </div>
         </AwesomeSlider>
     </section>
+      <BookNow/>
+      <PlaceToRemember />
+      <PoolArea />
+      <Rooms/>
     </>
     )
 }

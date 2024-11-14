@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from "react";
 import axios from 'axios';
 import { IP } from "./Constant";
+import {Link} from 'react-router-dom';
+
 function Rooms(){
     const [roomData, setRoomData] = useState([]);
     useEffect(()=>{
@@ -37,7 +39,7 @@ function Rooms(){
             </div>
 
             <div className="row">
-            {roomData.map((data,index)=>(
+            {/* {roomData.map((data,index)=>(
                 <div className="col-12 col-md-6 col-lg-4">
                 <div className="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                     <div className="bg-thumbnail bg-img">
@@ -52,8 +54,8 @@ function Rooms(){
                     <a href="#" className="book-room-btn btn palatin-btn">Book Room</a>
                 </div>
             </div>
-            ))}
-                {/* <div className="col-12 col-md-6 col-lg-4">
+            ))} */}
+                <div className="col-12 col-md-6 col-lg-4">
                     <div className="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                         <div className="bg-thumbnail bg-img firstImage"></div>
                         <p className="price-from">From $150/night</p>
@@ -62,9 +64,9 @@ function Rooms(){
                             <h4>Deluxe Room</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
                         </div>
-                        <a href="#" className="book-room-btn btn palatin-btn">Book Room</a>
+                        <Link className="book-room-btn btn palatin-btn" to="/searchroom">Book Room</Link>
                     </div>
-                </div> */}
+                </div>
                 <div className="col-12">
                     <div className="pagination-area wow fadeInUp" data-wow-delay="400ms">
                         <nav>
