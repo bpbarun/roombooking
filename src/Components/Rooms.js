@@ -3,7 +3,7 @@ import axios from 'axios';
 import { IP } from "./Constant";
 import {Link} from 'react-router-dom';
 
-function Rooms(){
+function Rooms(props){
     const [roomData, setRoomData] = useState([]);
     useEffect(()=>{
         fetchData()
@@ -64,7 +64,7 @@ function Rooms(){
                             <h4>Deluxe Room</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
                         </div>
-                        <Link className="book-room-btn btn palatin-btn" to="/searchroom">Book Room</Link>
+                        <Link className="book-room-btn btn palatin-btn" to={props.sendToPage}>Book Room</Link>
                     </div>
                 </div>
                 <div className="col-12">

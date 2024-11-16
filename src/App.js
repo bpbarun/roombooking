@@ -3,7 +3,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Components/HomePage';
 
-// import Booking from './Components/Booking';
+import BookingForm from './Components/BookingForm';
 import SearchPage from './Components/SearchPage'
 import {
   Routes,
@@ -18,6 +18,9 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="searchroom" element={<SearchPage />} />
+          <Route path="bookingform" element={<BookingForm />} />
+
+          
       </Routes>
       <Footer/>
     </>

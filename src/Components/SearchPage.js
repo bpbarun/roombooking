@@ -1,6 +1,6 @@
 import React from "react";
 import BookNow from "./BookNow";
-import BookingForm from "./BookingForm";
+import Rooms from "./Rooms";
 function SearchPage(){
     return(
         <>
@@ -10,7 +10,7 @@ function SearchPage(){
             </div>
         </section>
         <BookNow/>
-        <BookingForm />
+        <Rooms sendToPage='/bookingform'/>
         </>
     )
 }

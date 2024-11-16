@@ -67,7 +67,7 @@ function HomePage(){
       <BookNow/>
       <PlaceToRemember />
       <PoolArea />
-      <Rooms/>
+      <Rooms sendToPage='/searchroom'/>
     </>
     )
 }
